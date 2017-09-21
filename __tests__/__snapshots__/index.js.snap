@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should beautify SQL 1`] = `
+SELECT
+    id,
+    foo,
+    bar,
+    'test_type' AS type
+FROM
+    table1
+UNION ALL
+select
+    id,
+    title
+FROM
+    table2
+ORDER BY
+    id DESC,
+    title ASC NULLS LAST
+
+`;

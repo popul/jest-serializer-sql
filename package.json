@@ -1,0 +1,44 @@
+{
+  "name": "jest-serializer-sql",
+  "version": "1.0.0",
+  "description": "Jest snapshot serializer that beautifies SQL.",
+  "main": "index.js",
+  "author": "Paul MUSSO <paul@musso.io> (https://github.com/popul/)",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/popul/jest-serializer-sql.git"
+  },
+  "keywords": [
+    "jest",
+    "snapshot",
+    "serializer",
+    "sql",
+    "snapshotSerializer",
+    "test",
+    "beautifier"
+  ],
+  "bugs": {
+    "url": "https://github.com/popul/jest-serializer-sql/issues"
+  },
+  "homepage": "https://github.com/popul/jest-serializer-sql#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "pg-formatter": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^21.1.0",
+    "knex": "^0.13.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "./index.js"
+    ]
+  }
+}
