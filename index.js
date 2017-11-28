@@ -18,7 +18,13 @@ module.exports = {
   ),
   print:
     _.pipe(
-      v => v.toString(),
+      (v) => {
+        try {
+          return v.getQuery();
+        } catch (e) {
+          return v.toString();
+        }
+      },
       v => v.replace(/"/g, ''),
       format
     )
